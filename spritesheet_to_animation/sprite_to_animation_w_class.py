@@ -54,7 +54,7 @@ while running:
     if current_time - last_update >= animation_cooldown:
         frame += 1
         last_update = current_time
-        if frame >= len(animation_list):
+        if frame >= animation_steps:
             frame = 0
     
     # Show frame image

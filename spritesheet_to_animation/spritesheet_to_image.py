@@ -20,9 +20,8 @@ def get_image(sheet, frame, width, height, scale):
     return image
 
 
-# Eagle left
+# Eagle Frame
 frame_0 = get_image(sprite_sheet_image, 0, 32, 32, 2)
-frame_1 = get_image(sprite_sheet_image, 1, 32, 32, 2)
 
 
 running = True
@@ -41,6 +40,5 @@ while running:
     
     # Show frame image
     screen.blit(frame_0, (0, 0))
-    screen.blit(frame_1, (100, 0))
             
     pygame.display.update()
